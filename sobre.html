@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web - Sobre mí</title>
+
+    <style>
+        body {
+            background-color: #f4f4f4; 
+            color: #333; 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0;
+        }
+
+        header {
+            background-color: #004a99; 
+            color: white; 
+            padding: 20px 40px; 
+            text-align: center;
+        }
+        
+        header h1 {
+            margin: 0; 
+            font-size: 2.5em;
+        }
+        
+        header p {
+            margin: 5px 0 0 0; 
+            font-style: italic;
+        }
+
+        nav {
+            background-color: #333; 
+            padding: 10px 40px;
+        }
+        
+        nav ul {
+            margin: 0; 
+            padding: 0; 
+            list-style: none; 
+            text-align: center;
+        }
+        
+        nav li {
+            display: inline-block; 
+            margin-right: 20px;
+        }
+
+        /* OJO: Aquí el color es diferente al index.html */
+        nav a {
+            color: white; 
+            text-decoration: none; 
+            font-weight: bold; 
+            font-size: 1.1em;
+        }
+        
+        nav a.activo { /* Y esto solo está aquí */
+            color: #00aaff;
+        }
+
+        main {
+            padding: 20px 40px; 
+            min-height: 60vh;
+        }
+
+        .caja-contenido {
+            background-color: white; 
+            padding: 20px; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #004a99; 
+            border-bottom: 2px solid #004a99; 
+            padding-bottom: 5px;
+        }
+        
+        p {
+            line-height: 1.6;
+        }
+        
+        .lista-habilidades {
+            list-style: square;
+            padding-left: 20px;
+        }
+        
+        .lista-habilidades li {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #222; 
+            color: #aaa; 
+            padding: 20px 40px; 
+            text-align: center; 
+            margin-top: 20px;
+        }
+        
+        footer p {
+            margin: 0;
+            line-height: 1.6; /* <-- este 'p' es diferente al del index */
+        }
+        
+        footer .copy-peq {
+            margin: 5px 0 0 0; 
+            font-size: 0.9em;
+        }
+    </style>
+    </head>
+<body>
+
+    <header>
+        <h1>Mi Portfolio Personal</h1>
+        <p>Desarrollador Web en formación</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobre.html" class="activo">Sobre mí</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="caja-contenido">
+            <h2>Sobre mí</h2>
+            <p>
+                ¡Hola de nuevo! Como ya sabes, estoy estudiando DAW y me encanta el mundo del desarrollo web. 
+                Me considero una persona curiosa, proactiva y que siempre está dispuesta a aprender algo nuevo.
+            </p>
+            <p>
+                Mi objetivo es convertirme en un desarrollador Full-Stack, pero debo admitir que el Front-End 
+                y el diseño de interfaces (¡como esta asignatura!) me atraen especialmente.
+            </p>
+            
+            <h3 style="color: #555; margin-top: 30px;">Mis Habilidades Actuales</h3>
+            <ul class="lista-habilidades">
+                <li>HTML5 Semántico</li>
+                <li>CSS3 (¡en proceso de dominarlo!)</li>
+                <li>Conceptos básicos de JavaScript</li>
+                <li>Bases de Datos (SQL)</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mi Portfolio Personal. Todos los derechos reservados.</p>
+        <p class="copy-peq">Diseñado (con mucho caos) para la clase de DIW.</p>
+    </footer>
+
+</body>
+</html>
