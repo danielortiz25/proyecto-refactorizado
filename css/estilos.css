@@ -1,0 +1,120 @@
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 20px 40px;
+  min-height: 60vh;
+}
+
+h2 {
+  color: #004a99;
+  border-bottom: 2px solid #004a99;
+  padding-bottom: 5px;
+}
+
+h3 {
+  color: #333;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.intro {
+  font-size: 1.1em;
+}
+
+header {
+  background-color: #004a99;
+  color: white;
+  padding: 20px 40px;
+  text-align: center;
+}
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+header p {
+  margin: 5px 0 0 0;
+  font-style: italic;
+}
+
+nav {
+  background-color: #333;
+  padding: 10px 40px;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+nav li:last-child {
+  margin-right: 0;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+nav a.activo {
+  color: #00aaff;
+}
+
+.caja-contenido {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#proyectos-destacados {
+  margin-top: 30px;
+}
+
+.proyectos-vacio {
+  background-color: #eee;
+  border: 1px dashed #ccc;
+  padding: 40px;
+  text-align: center;
+  color: #777;
+}
+
+.titulo-habilidades {
+  color: #555;
+  margin-top: 30px;
+}
+
+.lista-habilidades {
+  list-style: square;
+  padding-left: 20px;
+}
+.lista-habilidades li {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #222;
+  color: #aaa;
+  padding: 20px 40px;
+  text-align: center;
+  margin-top: 20px;
+}
+footer p {
+  margin: 0;
+}
+footer .copy-peq {
+  margin: 5px 0 0 0;
+  font-size: 0.9em;
+}
