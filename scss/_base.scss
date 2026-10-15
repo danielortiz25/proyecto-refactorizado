@@ -1,0 +1,38 @@
+@use "colores" as *;
+
+body {
+  background-color: $color-fondo;
+  color: $color-texto;
+  font-family: $fuente-cuerpo;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $fuente-titulos;
+}
+
+main {
+  padding: 20px 40px;
+  min-height: 60vh;
+}
+
+h2 {
+  color: $color-primario;
+  border-bottom: 2px solid $color-secundario;
+  padding-bottom: 5px;
+}
+
+h3 {
+  color: $color-texto;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.intro {
+  font-size: 1.1em;
+}
