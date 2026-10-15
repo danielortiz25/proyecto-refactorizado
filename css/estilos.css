@@ -1,9 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap");
 body {
-  background-color: #f4f4f4;
-  color: #333;
-  font-family: Arial, sans-serif;
+  background-color: #f4f8f9;
+  color: #1b2a30;
+  font-family: "Open Sans", Arial, sans-serif;
   margin: 0;
   padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", Arial, sans-serif;
 }
 
 main {
@@ -12,13 +19,13 @@ main {
 }
 
 h2 {
-  color: #004a99;
-  border-bottom: 2px solid #004a99;
+  color: #0a4f60;
+  border-bottom: 2px solid #e8a33d;
   padding-bottom: 5px;
 }
 
 h3 {
-  color: #333;
+  color: #1b2a30;
 }
 
 p {
@@ -30,8 +37,8 @@ p {
 }
 
 header {
-  background-color: #004a99;
-  color: white;
+  background-color: #0a4f60;
+  color: #ffffff;
   padding: 20px 40px;
   text-align: center;
 }
@@ -45,34 +52,39 @@ header p {
 }
 
 nav {
-  background-color: #333;
+  background-color: #1b2a30;
   padding: 10px 40px;
 }
 nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
   margin: 0;
   padding: 0;
   list-style: none;
-  text-align: center;
-}
-nav li {
-  display: inline-block;
-  margin-right: 20px;
-}
-nav li:last-child {
-  margin-right: 0;
 }
 nav a {
-  color: white;
+  display: block;
+  padding: 8px 16px;
+  border-radius: 4px;
+  color: #ffffff;
   text-decoration: none;
-  font-weight: bold;
-  font-size: 1.1em;
+  font-weight: 600;
+  transition: background-color 0.2s, color 0.2s;
+}
+nav a:hover {
+  background-color: #e8a33d;
+  color: #1b2a30;
 }
 nav a.activo {
-  color: #00aaff;
+  color: #e8a33d;
+}
+nav a.activo:hover {
+  color: #1b2a30;
 }
 
 .caja-contenido {
-  background-color: white;
+  background-color: #ffffff;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -83,15 +95,15 @@ nav a.activo {
 }
 
 .proyectos-vacio {
-  background-color: #eee;
-  border: 1px dashed #ccc;
+  background-color: #e6eef0;
+  border: 1px dashed #b8c7cc;
   padding: 40px;
   text-align: center;
-  color: #777;
+  color: #4a5b62;
 }
 
 .titulo-habilidades {
-  color: #555;
+  color: #4a5b62;
   margin-top: 30px;
 }
 
@@ -101,12 +113,60 @@ nav a.activo {
 }
 .lista-habilidades li {
   margin-bottom: 10px;
-  font-weight: bold;
+  font-weight: 600;
+}
+
+form {
+  margin-top: 20px;
+}
+form .campo {
+  margin-bottom: 20px;
+}
+form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+form input,
+form textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  margin: 0;
+  border: 1px solid #b8c7cc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1em;
+  color: #1b2a30;
+}
+form input:focus,
+form textarea:focus {
+  outline: 2px solid #e8a33d;
+  border-color: #0a4f60;
+}
+form textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: #0a4f60;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 24px;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+button:hover {
+  background-color: #083d4b;
 }
 
 footer {
-  background-color: #222;
-  color: #aaa;
+  background-color: #1b2a30;
+  color: #b8c7cc;
   padding: 20px 40px;
   text-align: center;
   margin-top: 20px;
