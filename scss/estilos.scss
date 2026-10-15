@@ -1,0 +1,11 @@
+// Punto de entrada: solo importa los parciales.
+// Live Sass Compiler genera css/estilos.css a partir de este fichero.
+@use "fuentes";
+@use "colores";
+@use "base";
+@use "header";
+@use "nav";
+@use "contenido";
+@use "formulario";
+@use "botones";
+@use "footer";

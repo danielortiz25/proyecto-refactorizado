@@ -1,0 +1,35 @@
+@use "colores" as *;
+
+.caja-contenido {
+  background-color: $color-superficie;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#proyectos-destacados {
+  margin-top: 30px;
+}
+
+.proyectos-vacio {
+  background-color: $color-vacio-fondo;
+  border: 1px dashed $color-borde;
+  padding: 40px;
+  text-align: center;
+  color: $color-texto-suave;
+}
+
+.titulo-habilidades {
+  color: $color-texto-suave;
+  margin-top: 30px;
+}
+
+.lista-habilidades {
+  list-style: square;
+  padding-left: 20px;
+
+  li {
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,38 @@
+@use "colores" as *;
+
+nav {
+  background-color: $color-texto;
+  padding: 10px 40px;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  a {
+    display: block;
+    padding: 8px 16px;
+    border-radius: 4px;
+    color: $color-superficie;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.2s, color 0.2s;
+
+    &:hover {
+      background-color: $color-secundario;
+      color: $color-texto;
+    }
+
+    &.activo {
+      color: $color-secundario;
+
+      &:hover {
+        color: $color-texto;
+      }
+    }
+  }
+}
